@@ -26,14 +26,14 @@ class DocumentValidator
     end
 
    def self.is_valid(cpf) 
-     return is_valid_steep1(cpf) && is_valid_steep2(cpf) ? true : false     
+     return is_valid_steep1(cpf) && is_valid_steep1(cpf) ? true : false     
    end
 
   def self.is_valid_steep1(cpf)
     cpf = cpf.delete("^0-9")     
     count =0;
     result = 0;
-    i =10;          
+    i =10;      
      if cpf.size== 11         
          9.times do           
             result = result + cpf[count].to_i*i        

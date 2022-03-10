@@ -26,7 +26,7 @@ class DocumentValidator
     end
 
    def self.is_valid(cpf) 
-     return is_valid_steep1(cpf) && is_valid_steep1(cpf) ? true : false     
+     return is_valid_steep1(cpf) && is_valid_steep2(cpf) ? true : false     
    end
 
   def self.is_valid_steep1(cpf)
